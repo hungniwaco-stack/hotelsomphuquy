@@ -8,7 +8,11 @@
     <meta name="description"
         content="Chào mừng bạn đến với Sớm Phú Quý Hotel - Khách sạn resort hiện đại tại xã Ninh Phước - tỉnh Khánh Hòa. Trải nghiệm dịch vụ 4 sao với phòng ốc sang trọng.">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Search Engine Meta -->
+    <!-- Open Graph SEO Meta -->
+    <meta property="og:title" content="Sớm Phú Quý Hotel | Resort Nghỉ Dưỡng xã Ninh Phước - tỉnh Khánh Hòa">
+    <meta property="og:description" content="Trải nghiệm dịch vụ 4 sao với phòng ốc sang trọng tại Ninh Phước.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070">
+    <meta property="og:type" content="website">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="https://via.placeholder.com/32" type="image/x-icon">
 </head>
@@ -17,31 +21,72 @@
 
     <!-- Navigation -->
     <nav id="navbar">
-        <a href="#" class="logo">HOTEL SỚM PHÚ QUÝ</a>
+        <a href="#" class="logo" style="display:flex; align-items:center; gap: 10px;">
+            <img src="images/Logo 5 — Logo tối giản cực sang.png" alt="Logo" style="height:40px; border-radius:4px;">
+            HOTEL SỚM PHÚ QUÍ
+        </a>
         <ul class="nav-links">
             <li><a href="#home">Trang Chủ</a></li>
             <li><a href="#about">Về Chúng Tôi</a></li>
             <li><a href="#rooms">Phòng Nghỉ</a></li>
             <li><a href="#amenities">Tiện ích</a></li>
             <li><a href="#gallery">Điểm Tham Quan</a></li>
-            <li><a href="#contact">Liên Hệ</a></li>
+            <li><a href="#contact-details">Liên Hệ</a></li>
         </ul>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Chuyển giao diện sáng tối">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
+    <main>
+
     <!-- Hero Section -->
-    <header id="home">
+    <header id="home" style="background-image: linear-gradient(rgba(15, 44, 61, 0.4), rgba(15, 44, 61, 0.4)), url('images/Banner (2).png');">
         <div class="hero-content">
-            <h1 class="reveal">Khám Phá<br>Sớm Phú Quý</h1>
-            <p class="reveal">Nơi Bình Yên Gặp Gỡ Hiện Đại Giữa Lòng<br>xã Ninh Phước - tỉnh Khánh Hòa</p>
+            <h1 class="reveal">Khám Phá<br>Sớm Phú Quí</h1>
+            <p class="reveal">Điểm dừng chân ấm cúng giữa lòng Ninh Phước – Khánh Hòa<br>Nghỉ dưỡng thoải mái • Di chuyển thuận tiện • Giá hợp lý cho mọi chuyến đi</p>
+        </div>
+        
+        <!-- Floating Booking Bar -->
+        <div class="booking-wrapper reveal delay-1">
+            <div class="booking-bar glassmorphism" aria-label="Đặt phòng">
+                <div class="booking-item">
+                    <label for="checkin">Nhận phòng</label>
+                    <input type="date" id="checkin" class="clean-input">
+                </div>
+                <div class="booking-separator"></div>
+                <div class="booking-item">
+                    <label for="checkout">Trả phòng</label>
+                    <input type="date" id="checkout" class="clean-input">
+                </div>
+                <div class="booking-separator"></div>
+                <div class="booking-item">
+                    <label for="guests">Khách</label>
+                    <select id="guests" class="clean-input">
+                        <option value="1">1 Người lớn</option>
+                        <option value="2" selected>2 Người lớn</option>
+                        <option value="3">Gia đình (3-4 người)</option>
+                    </select>
+                </div>
+                <button class="btn-primary magnetic-btn" id="check-availability">Kiểm Tra Phòng</button>
+            </div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="trust-badges reveal delay-2">
+            <div class="badge">⭐ <strong>9.5/10</strong> Tuyệt vời trên Booking.com</div>
+            <div class="badge-dot">•</div>
+            <div class="badge">🏆 Lựa chọn hàng đầu tại Ninh Phước</div>
         </div>
     </header>
-
-
 
     <!-- About Section -->
     <section id="about" class="container">
@@ -51,17 +96,19 @@
         </div>
         <div class="about-grid">
             <div class="about-img reveal">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/352642743.jpg?k=bb31885b3809cb3ef7c6c7577a05745eaa29fb4dd268f0f2fa94f45bf46551fe&o="
-                    alt="Sớm Phú Quý Hotel Lobby"
+                <img src="images/02.jpg"
+                    alt="Sớm Phú Quí Hotel Lobby"
                     style="width: 100%; border-radius: 4px; box-shadow: 20px 20px 0px var(--bg-alt);">
             </div>
             <div class="about-text reveal">
-                <h3>Trải Nghiệm Nghỉ Dưỡng Đích Thực</h3>
-                <p>Tọa lạc tại vị trí đắc địa, xã Ninh Phước - tỉnh Khánh Hòa, Sớm Phú Quý Hotel là điểm dừng chân lý
-                    tưởng cho du khách muốn khám phá vẻ đẹp hoang sơ của xã Ninh Phước - tỉnh Khánh Hòa.</p>
-                <br>
-                <p>Với thiết kế hiện đại, tinh tế cùng đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết mang đến cho
-                    bạn những giây phút thư giãn tuyệt vời nhất.</p>
+                <h3 style="font-size: 1.6rem;">KHÔNG CHỈ LÀ NƠI LƯU TRÚ — MÀ LÀ CẢM GIÁC THOẢI MÁI NHƯ Ở NHÀ</h3>
+                <p>Dù bạn đang tìm kiếm một nơi nghỉ ngơi cho kỳ du lịch cùng gia đình, chuyến đi công tác hay kỳ nghỉ dành cho hai người, Hotel Sớm Phú Quí mang đến không gian lưu trú hiện đại, sạch sẽ và tiện nghi ngay trung tâm xã Ninh Phước.</p>
+                <ul style="list-style: none; padding-top: 15px; margin-top: 10px;">
+                    <li style="margin-bottom: 12px; font-weight: 500;">✅ Phòng nghỉ gọn gàng, thoáng mát</li>
+                    <li style="margin-bottom: 12px; font-weight: 500;">✅ Không gian yên tĩnh giúp nghỉ ngơi trọn vẹn</li>
+                    <li style="margin-bottom: 12px; font-weight: 500;">✅ Wifi tốc độ cao miễn phí</li>
+                    <li style="margin-bottom: 12px; font-weight: 500;">✅ Vị trí thuận tiện di chuyển tham quan</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -75,42 +122,57 @@
             </div>
             <div class="room-grid">
                 <!-- Room 1 -->
-                <div class="room-card reveal">
+                <div class="room-card room-card-premium reveal">
                     <div class="room-img"
-                        style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/352849945.jpg?k=2e68e442c698a4d6b64800e72c922bdfdbc8fe992600c013dafd51801000b4c9&o=');">
+                        style="background-image: url('images/05.jpg');">
                     </div>
                     <div class="room-info">
-                        <h4>Phòng Deluxe Giường Đôi</h4>
-                        <p>Trải nghiệm sự tinh tế với không gian 30m2, ban công hướng vườn và tiện nghi hiện đại bậc
-                            nhất. Lý tưởng cho các cặp đôi.</p>
-                        <span class="room-price">950,000 VND / Đêm</span>
-                        <a href="#contact" class="btn-outline">Đặt Phòng Ngay</a>
+                        <h4>Phòng Tiêu Chuẩn</h4>
+                        <div class="room-features">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg> Wifi</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg> Giường Queen</span>
+                        </div>
+                        <p>Không gian nghỉ dưỡng tối giản, ấm cúng. Thiết kế hiện đại, gọn gàng và thoáng mát.</p>
+                        <div class="room-footer">
+                            <span class="room-price"><span style="font-size: 0.9rem; text-decoration: line-through; color: var(--text-muted); margin-right: 10px;">500k</span> 350k <small>/ Đêm</small></span>
+                            <a href="#contact-details" class="btn-outline">Đặt Ngay (-30%)</a>
+                        </div>
                     </div>
                 </div>
                 <!-- Room 2 -->
-                <div class="room-card reveal">
+                <div class="room-card room-card-premium reveal">
                     <div class="room-img"
-                        style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/352849871.jpg?k=ffa5f7df3b532e3f6d9cb62d4e4b102bac0c377b4810097196f14d81a1b7c13f&o=');">
+                        style="background-image: url('images/07.jpg');">
                     </div>
                     <div class="room-info">
-                        <h4>Phòng Suite Hoàng Gia</h4>
-                        <p>Đỉnh cao của sự sang trọng với diện tích 50m2, phòng khách riêng biệt và bồn tắm massage cao
-                            cấp. Tầm nhìn toàn cảnh thành phố.</p>
-                        <span class="room-price">1,800,000 VND / Đêm</span>
-                        <a href="#contact" class="btn-outline">Đặt Phòng Ngay</a>
+                        <h4>Phòng Deluxe Đôi</h4>
+                        <div class="room-features">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg> Wifi</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg> Giường King</span>
+                        </div>
+                        <p>Một nơi đủ riêng tư để nghỉ ngơi, đủ tiện nghi để bạn luôn cảm thấy thoải mái như ở nhà.</p>
+                        <div class="room-footer">
+                            <span class="room-price"><span style="font-size: 0.9rem; text-decoration: line-through; color: var(--text-muted); margin-right: 10px;">700k</span> 490k <small>/ Đêm</small></span>
+                            <a href="#contact-details" class="btn-outline">Đặt Ngay (-30%)</a>
+                        </div>
                     </div>
                 </div>
                 <!-- Room 3 -->
-                <div class="room-card reveal">
+                <div class="room-card room-card-premium reveal">
                     <div class="room-img"
-                        style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/352849922.jpg?k=74c043919bc574048858eb97dcc58caef4c2edd7b9a0ed2ea8c81066f7eb7371&o=');">
+                        style="background-image: url('images/10.jpg');">
                     </div>
                     <div class="room-info">
                         <h4>Phòng Twin Tiêu Chuẩn</h4>
-                        <p>Sự kết hợp hoàn hảo giữa tiện nghi và công năng với 2 giường đơn êm ái. Phù hợp cho chuyến
-                            công tác hoặc du lịch cùng bạn bè.</p>
-                        <span class="room-price">850,000 VND / Đêm</span>
-                        <a href="#contact" class="btn-outline">Đặt Phòng Ngay</a>
+                        <div class="room-features">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg> Wifi</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg> 2 Giường Đơn</span>
+                        </div>
+                        <p>Sự kết hợp hoàn hảo giữa tiện nghi và công năng với 2 giường đơn êm ái. Phù hợp cho nhóm bạn bè hoặc đồng nghiệp công tác.</p>
+                        <div class="room-footer">
+                            <span class="room-price"><span style="font-size: 0.9rem; text-decoration: line-through; color: var(--text-muted); margin-right: 10px;">600k</span> 420k <small>/ Đêm</small></span>
+                            <a href="#contact-details" class="btn-outline">Đặt Ngay (-30%)</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,35 +185,30 @@
             <h2>Tiện Ích Đặc Quyền</h2>
             <div class="divider"></div>
         </div>
-        <div class="room-grid">
-            <div class="review-card reveal">
+        <div class="bento-grid">
+            <div class="bento-card bento-span-2 review-card reveal">
                 <div class="amenity-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M2 6h20v12H2z" />
-                        <path d="M6 12h4" />
-                        <path d="M14 12h4" />
-                        <path d="M10 18v-6" />
-                        <path d="M14 18v-6" />
+                        <rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="12.5" r="1.5"></circle>
+                        <path d="M16 16v-2a4 4 0 0 0-4-4H4"></path>
                     </svg>
                 </div>
-                <h4>Hồ Bơi Vô Cực</h4>
-                <p>Thư giãn dưới làn nước trong xanh và tận hưởng nắng ấm xã Ninh Phước - tỉnh Khánh Hòa với view toàn
-                    cảnh.</p>
+                <h4>Xe đưa đón sân bay 🚘</h4>
+                <p>Giúp chuyến đi của bạn thuận tiện và tiết kiệm thời gian hơn. Đặt xe dễ dàng ngay tại lễ tân.</p>
             </div>
-            <div class="review-card reveal">
+            <div class="bento-card review-card reveal">
                 <div class="amenity-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
-                        <path d="M7 2v20" />
-                        <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+                        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>
                     </svg>
                 </div>
-                <h4>Nhà Hàng Heritage</h4>
-                <p>Khám phá tinh hoa ẩm thực Phan Rang được chế biến từ nguồn nguyên liệu địa phương tươi ngon nhất.</p>
+                <h4>Wifi Miễn Phí 📶</h4>
+                <p>Kết nối ổn định tốc độ cao tại phòng và khu vực chung cho công việc và giải trí.</p>
             </div>
-            <div class="review-card reveal">
+            <div class="bento-card review-card reveal">
                 <div class="amenity-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -160,8 +217,8 @@
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                     </svg>
                 </div>
-                <h4>Dịch Vụ Concierge</h4>
-                <p>Đội ngũ nhân viên tận tâm, sẵn sàng hỗ trợ đặt tour, đưa đón sân bay và mọi yêu cầu riêng tư.</p>
+                <h4>Hỗ Trợ Tận Tâm 🛎</h4>
+                <p>Đội ngũ luôn thân thiện, sẵn sàng hỗ trợ bạn trong suốt thời gian lưu trú.</p>
             </div>
         </div>
     </section>
@@ -176,29 +233,26 @@
             <div class="room-grid">
                 <div class="testimonial-card reveal">
                     <div class="quote-icon">"</div>
-                    <p>Khách sạn tuyệt vời, không gian yên tĩnh và rất sạch sẽ. Nhân viên phục vụ vô cùng chu đáo và
-                        nhiệt tình.</p>
+                    <p>Khách sạn sạch sẽ, yên tĩnh và rất thuận tiện đi lại. Nhân viên nhiệt tình, giá hợp lý.</p>
                     <div class="customer-info">
-                        <strong>Anh Tuấn Nguyen</strong>
-                        <span>Từ Hà Nội</span>
+                        <strong>Anh Minh</strong>
+                        <span>Từ TP.HCM</span>
                     </div>
                 </div>
                 <div class="testimonial-card reveal">
                     <div class="quote-icon">"</div>
-                    <p>Vị trí thuận tiện, phòng ốc hiện đại và thoáng mát. Hồ bơi vô cực là điểm cộng lớn nhất khi nghỉ
-                        tại đây.</p>
+                    <p>Phòng đẹp hơn mong đợi, rất phù hợp cho gia đình nghỉ ngơi cuối tuần. Một trải nghiệm đáng nhớ.</p>
                     <div class="customer-info">
-                        <strong>Chị Lan Hương</strong>
-                        <span>Từ TP. HCM</span>
+                        <strong>Chị Hương</strong>
+                        <span>Từ Nha Trang</span>
                     </div>
                 </div>
                 <div class="testimonial-card reveal">
                     <div class="quote-icon">"</div>
-                    <p>Dịch vụ đưa đón sân bay rất chuyên nghiệp. Tôi chắc chắn sẽ quay lại Sớm Phú Quý trong chuyến đi
-                        tới.</p>
+                    <p>Vị trí gần trung tâm nên đi đâu cũng tiện. Dịch vụ tận tâm. Sẽ quay lại lần sau cùng đối tác.</p>
                     <div class="customer-info">
-                        <strong>Mr. David Smith</strong>
-                        <span>Từ Australia</span>
+                        <strong>Anh Quốc</strong>
+                        <span>Từ Đà Nẵng</span>
                     </div>
                 </div>
             </div>
@@ -319,6 +373,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer id="footer">
         <div class="footer-grid">
@@ -338,19 +394,20 @@
             </div>
             <div class="footer-info">
                 <h4>Thông Tin</h4>
-                <p>📍 xã Ninh Phước - tỉnh Khánh Hòa</p>
-                <p>📞 +84 259 3828 888</p>
-                <p>✉️ info@somphuquy.com</p>
+                <p>📍 Trung tâm xã Ninh Phước - tỉnh Khánh Hòa</p>
+                <p>📞 Hotline: [Điền số điện thoại]</p>
+                <p>✉️ info@somphuqui.com</p>
             </div>
             <div class="footer-info">
                 <h4>Liên Hệ Đặt Phòng</h4>
+                <p style="color: var(--accent-color); font-weight: bold; margin-bottom: 10px;">🎁 GIẢM NGAY 30%</p>
                 <ul>
-                    <li><a href="https://zalo.me/" target="_blank">Zalo</a></li>
+                    <li><a href="https://zalo.me/" target="_blank">Fanpage / Zalo: [Điền thông tin]</a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2026 Sớm Phú Quý Hotel. All rights reserved. Designed with ❤️ by Antigravity.
+            &copy; 2026 Sớm Phú Quí Hotel. All rights reserved. Designed with ❤️ by Antigravity.
         </div>
     </footer>
 
