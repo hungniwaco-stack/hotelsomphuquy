@@ -366,24 +366,23 @@ section {
     transform: scale(1.05);
 }
 
-/* Premium Horizontal Room Card */
+/* Premium Horizontal Room Card -> Changed to Vertical per user request */
 .room-card-premium {
     display: flex;
-    flex-direction: row;
-    height: 350px;
-}
-
-.room-card-premium .room-img {
-    flex: 1;
+    flex-direction: column;
     height: 100%;
 }
 
+.room-card-premium .room-img {
+    flex-shrink: 0;
+    height: 250px;
+}
+
 .room-card-premium .room-info {
-    flex: 1.2;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex: 1;
 }
 
 .room-features {
@@ -883,11 +882,6 @@ footer {
         position: relative;
         bottom: 0;
         margin-top: -30px;
-    }
-    
-    .room-card-premium {
-        flex-direction: column;
-        height: auto;
     }
     
     .room-card-premium .room-img {
