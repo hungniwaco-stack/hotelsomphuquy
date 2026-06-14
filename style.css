@@ -978,4 +978,41 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
         background-color: white !important;
     }
+
+    /* Mobile Spacing & Typography */
+    .container { padding: 0 15px; }
+    section { padding: 50px 0; }
+    #home { background-position: center bottom; height: 85vh; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    p { font-size: 0.95rem; line-height: 1.6; }
+    .room-card-premium .room-info { padding: 20px; }
+    
+    /* Sticky Bottom Bar */
+    body { padding-bottom: 70px; }
+    .mobile-sticky-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .mobile-sticky-bar a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 30px;
+    }
+}
+
+.mobile-sticky-bar {
+    display: none;
 }
