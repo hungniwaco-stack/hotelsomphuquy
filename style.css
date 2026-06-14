@@ -336,8 +336,8 @@ section {
 
 .room-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
 .room-card {
@@ -375,7 +375,7 @@ section {
 
 .room-card-premium .room-img {
     flex-shrink: 0;
-    height: 250px;
+    height: 400px;
 }
 
 .room-card-premium .room-info {
