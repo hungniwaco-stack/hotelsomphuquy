@@ -980,6 +980,7 @@ footer {
     }
 
     /* Mobile Spacing & Typography */
+    .logo { font-size: 1.1rem; letter-spacing: 1px; }
     .container { padding: 0 15px; }
     section { padding: 50px 0; }
     #home { background-position: center bottom; height: 85vh; }
