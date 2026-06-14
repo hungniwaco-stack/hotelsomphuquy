@@ -53,7 +53,7 @@
     <header id="home">
         <div class="hero-content">
             <h1 class="hero-title">Khám Phá<br>Sớm Phú Quí</h1>
-            <p class="hero-subtitle">Quốc Lộ 1A - Phước Dân, Xã Ninh Phước, Tỉnh Khánh Hoà<br>Nghỉ dưỡng thoải mái • Di chuyển thuận tiện • Giá hợp lý cho mọi chuyến đi</p>
+            <p class="hero-subtitle">{{ADDRESS}}<br>{{HOTEL_SUBTITLE}}</p>
         </div>
         
 
@@ -80,7 +80,7 @@
             </div>
             <div class="about-text reveal">
                 <h3 style="font-size: 1.6rem;">KHÔNG CHỈ LÀ NƠI LƯU TRÚ — MÀ LÀ CẢM GIÁC THOẢI MÁI NHƯ Ở NHÀ</h3>
-                <p>Dù bạn đang tìm kiếm một nơi nghỉ ngơi cho kỳ du lịch cùng gia đình, chuyến đi công tác hay kỳ nghỉ dành cho hai người, Hotel Sớm Phú Quí mang đến không gian lưu trú hiện đại, sạch sẽ và tiện nghi ngay tại Quốc Lộ 1A - Phước Dân, Xã Ninh Phước, Tỉnh Khánh Hoà.</p>
+                <p>Dù bạn đang tìm kiếm một nơi nghỉ ngơi cho kỳ du lịch cùng gia đình, chuyến đi công tác hay kỳ nghỉ dành cho hai người, Hotel Sớm Phú Quí mang đến không gian lưu trú hiện đại, sạch sẽ và tiện nghi ngay tại {{ADDRESS}}.</p>
                 <ul style="list-style: none; padding-top: 15px; margin-top: 10px;">
                     <li style="margin-bottom: 12px; font-weight: 500;">✅ Phòng nghỉ gọn gàng, thoáng mát</li>
                     <li style="margin-bottom: 12px; font-weight: 500;">✅ Không gian yên tĩnh giúp nghỉ ngơi trọn vẹn</li>
@@ -256,28 +256,7 @@
                 <h2>Một Số Hình Ảnh Của Khách Sạn</h2>
                 <div class="divider"></div>
             </div>
-                                    <div class="hotel-gallery-grid">
-                <div class="gallery-item reveal"><img src="images/hotel-gallery/1.jpg" alt="Hotel Sớm Phú Quý - Hình 1" loading="lazy"></div>
-                <div class="gallery-item reveal delay-1"><img src="images/hotel-gallery/2.jpg" alt="Hotel Sớm Phú Quý - Hình 2" loading="lazy"></div>
-                <div class="gallery-item reveal delay-2"><img src="images/hotel-gallery/3.jpg" alt="Hotel Sớm Phú Quý - Hình 3" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/hotel-gallery/4.jpg" alt="Hotel Sớm Phú Quý - Hình 4" loading="lazy"></div>
-                <div class="gallery-item reveal delay-1"><img src="images/hotel-gallery/5.jpg" alt="Hotel Sớm Phú Quý - Hình 5" loading="lazy"></div>
-                <div class="gallery-item reveal delay-2"><img src="images/hotel-gallery/6.jpg" alt="Hotel Sớm Phú Quý - Hình 6" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/hotel-gallery/7.jpg" alt="Hotel Sớm Phú Quý - Hình 7" loading="lazy"></div>
-                <div class="gallery-item reveal delay-1"><img src="images/hotel-gallery/8.jpg" alt="Hotel Sớm Phú Quý - Hình 8" loading="lazy"></div>
-                <div class="gallery-item reveal delay-2"><img src="images/hotel-gallery/9.jpg" alt="Hotel Sớm Phú Quý - Hình 9" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/hotel-gallery/10.jpg" alt="Hotel Sớm Phú Quý - Hình 10" loading="lazy"></div>
-                <div class="gallery-item reveal delay-1"><img src="images/hotel-gallery/11.jpg" alt="Hotel Sớm Phú Quý - Hình 11" loading="lazy"></div>
-                <div class="gallery-item reveal delay-2"><img src="images/hotel-gallery/12.jpg" alt="Hotel Sớm Phú Quý - Hình 12" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/hotel-gallery/13.jpg" alt="Hotel Sớm Phú Quý - Hình 13" loading="lazy"></div>
-                <div class="gallery-item reveal delay-1"><img src="images/hotel-gallery/14.jpg" alt="Hotel Sớm Phú Quý - Hình 14" loading="lazy"></div>
-                <div class="gallery-item reveal delay-2"><img src="images/hotel-gallery/15.jpg" alt="Hotel Sớm Phú Quý - Hình 15" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/hotel-gallery/16.jpg" alt="Hotel Sớm Phú Quý - Hình 16" loading="lazy"></div>
-                <div class="gallery-item reveal delay-1"><img src="images/hotel-gallery/17.jpg" alt="Hotel Sớm Phú Quý - Hình 17" loading="lazy"></div>
-                <div class="gallery-item reveal delay-2"><img src="images/hotel-gallery/18.jpg" alt="Hotel Sớm Phú Quý - Hình 18" loading="lazy"></div>
-                <div class="gallery-item reveal"><img src="images/hotel-gallery/19.jpg" alt="Hotel Sớm Phú Quý - Hình 19" loading="lazy"></div>
-                <div class="gallery-item reveal delay-1"><img src="images/hotel-gallery/20.jpg" alt="Hotel Sớm Phú Quý - Hình 20" loading="lazy"></div>
-            </div>
+                        {{GALLERY_HTML}}
         </div>
     </section>
 
@@ -396,7 +375,7 @@
                     allowfullscreen="" loading="lazy">
                 </iframe>
                 <p style="margin-top: 15px; font-size: 0.9rem; color: var(--primary-color);">
-                    📍 Quốc Lộ 1A - Phước Dân, Xã Ninh Phước, Tỉnh Khánh Hoà
+                    📍 {{ADDRESS}}
                 </p>
             </div>
         </div>
@@ -408,8 +387,8 @@
     <footer id="footer">
         <div class="footer-grid">
             <div class="footer-info">
-                <h4>Hotel Sớm Phú Quý</h4>
-                <p>Khám phá sự giao thoa hoàn hảo giữa phong cách hiện đại và nét đẹp bản địa tại Quốc Lộ 1A - Phước Dân, Xã Ninh Phước, Tỉnh Khánh Hoà.</p>
+                <h4>{{HOTEL_NAME}}</h4>
+                <p>Khám phá sự giao thoa hoàn hảo giữa phong cách hiện đại và nét đẹp bản địa tại {{ADDRESS}}.</p>
             </div>
             <div class="footer-info">
                 <h4>Liên Kết</h4>
@@ -422,7 +401,7 @@
             </div>
             <div class="footer-info">
                 <h4>Thông Tin Liên Hệ</h4>
-                <p>📍 Quốc Lộ 1A - Phước Dân, Xã Ninh Phước, Tỉnh Khánh Hoà</p>
+                <p>📍 {{ADDRESS}}</p>
                 <ul>
                     <li><a href="tel:02593828888">📞 Điện thoại: 02593 828888</a></li>
                 </ul>

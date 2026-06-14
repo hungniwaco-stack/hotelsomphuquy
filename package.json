@@ -1,0 +1,23 @@
+{
+    "name":  "som-phu-quy-hotel",
+    "version":  "1.0.0",
+    "description":  "",
+    "main":  "script.js",
+    "scripts":  {
+                    "build":  "node scripts/build.js"
+                },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/hungniwaco-stack/som-phu-quy-hotel.git"
+                   },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "type":  "commonjs",
+    "bugs":  {
+                 "url":  "https://github.com/hungniwaco-stack/som-phu-quy-hotel/issues"
+             },
+    "homepage":  "https://github.com/hungniwaco-stack/som-phu-quy-hotel#readme"
+}
