@@ -262,11 +262,11 @@ nav.scrolled .bar {
 }
 
 .hero-content h1.reveal {
-    transition-delay: 0.5s;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 }
 
 .hero-content p.reveal {
-    transition-delay: 0.8s;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 1.2s;
 }
 
 .hero-content h1 {
