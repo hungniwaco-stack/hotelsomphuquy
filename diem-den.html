@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sớm Phú Quý Hotel | Danh Mục Điểm Tham Quan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: var(--bg-color); color: var(--text-color);">
+    <nav id="navbar" class="scrolled">
+        <a href="index.html" class="logo" style="display:flex; align-items:center; gap: 10px;">
+            <img src="images/logo.png" alt="Logo" style="height:40px; border-radius:4px;">
+            HOTEL SỚM PHÚ QUÍ
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Trang Chủ</a></li>
+            <li><a href="index.html#about">Về Chúng Tôi</a></li>
+            <li><a href="index.html#rooms">Phòng Nghỉ</a></li>
+            <li><a href="index.html#amenities">Tiện ích</a></li>
+            <li><a href="diem-den.html">Điểm Tham Quan</a></li>
+            <li><a href="index.html#contact-details">Liên Hệ</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Chuyển giao diện sáng tối">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <section class="container">
+            <div class="section-title reveal">
+                <h2>Tất Cả Điểm Tham Quan</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 20px; color: var(--text-muted);">Khám phá những nét đẹp văn hoá, thiên nhiên tuyệt vời quanh khách sạn.</p>
+            </div>
+
+            <!-- Gần khách sạn -->
+            <div class="attraction-group reveal">
+                <h3 class="attraction-category">🚶 Đi Gần Khách Sạn</h3>
+                <div class="room-grid">
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/attraction-1.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Biển Bình Sơn</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Nằm trên trục đường 16/4, phường Mỹ Hải. Phù hợp đi dạo biển, picnic và ngắm hoàng hôn.</p>
+                        </div>
+                    </div>
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/attraction-2.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Tháp Po Klong Garai</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Ở 52E Bác Ái, phường Đô Vinh. Cụm tháp Chăm nổi bật của Phan Rang và là biểu tượng của thành phố.</p>
+                        </div>
+                    </div>
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/attraction-3.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Đồi Cát Nam Cương</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Cách khách sạn không xa, nơi lý tưởng để chụp ảnh bình minh và trải nghiệm đồi cát.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nửa ngày -->
+            <div class="attraction-group reveal">
+                <h3 class="attraction-category">🕐 Đi Trong Nửa Ngày</h3>
+                <div class="room-grid">
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/half-day-2.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Làng Gốm Bàu Trúc & Dệt Mỹ Nghiệp</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Khám phá tinh hoa văn hóa Chăm qua các sản phẩm gốm thủ công và thổ cẩm.</p>
+                        </div>
+                    </div>
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/half-day-3.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Vườn Nho</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Trải nghiệm tự tay hái và thưởng thức những chùm nho mọng nước, mua đặc sản.</p>
+                        </div>
+                    </div>
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/half-day-1.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Bờ Kè Khánh Hội</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Điểm dạo chơi tại khu vực Phan Rang nếu bạn muốn đi nhẹ nhàng gần trung tâm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Xa hơn chút -->
+            <div class="attraction-group reveal">
+                <h3 class="attraction-category">🚗 Đi Xa Hơn Chút</h3>
+                <div class="room-grid">
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/full-day-1.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Hang Rái</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Điểm thiên nhiên nổi tiếng, khung cảnh đá và biển hoang sơ tuyệt đẹp.</p>
+                        </div>
+                    </div>
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/full-day-2.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Vịnh Vĩnh Hy</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Điểm nổi bật nhất khu vực, phù hợp ngắm biển đẹp và đi cung đường ven biển.</p>
+                        </div>
+                    </div>
+                    <div class="room-card reveal" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="room-img" style="background-image: url('images/full-day-3.jpg'); height: 220px; flex-shrink: 0;"></div>
+                        <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; background: var(--card-bg);">
+                            <h4 style="margin-bottom: 10px; color: var(--primary-color);">Vườn Quốc Gia Núi Chúa</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Thích hợp cho cảnh quan tự nhiên và trekking, thường kết hợp với Vĩnh Hy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
+                <a href="index.html" class="btn-outline" style="padding: 15px 30px; font-size: 1rem; border-radius: 8px;">⬅ Quay lại Trang Chủ</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" style="padding: 30px 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <div class="copyright">
+            &copy; 2026 Sớm Phú Quí Hotel. All rights reserved. Designed with ❤️ by Antigravity.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
